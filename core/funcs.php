@@ -1,5 +1,6 @@
 <?php
 
+
 function dump($data)
 {
     echo "<pre>";
@@ -25,8 +26,29 @@ function load($fillable = [])
     $data = [];
     foreach ($_POST as $k => $v) {
         if (in_array($k, $fillable)) {
-            $data[$k] = $v;
+            $data[$k] = trim($v);
         }
     }
     return $data;
+}
+
+function old($fieldname)    // Сохрание введеных данных
+{
+    return isset($_POST[$fieldname]) ? h($_POST[$fieldname]) : '';
+}
+
+function h($str)        //обертка
+{
+    return htmlentities($str, ENT_QUOTES);
+}
+
+function redirect($url = '')
+{
+    if ($url) {
+        $redirect = $url;
+    } else {
+        $redirect = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : PATH;
+    }
+    header("Location: {$redirect}");
+    die();
 }

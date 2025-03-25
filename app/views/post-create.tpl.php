@@ -12,10 +12,10 @@
                     <div class="mb-3">
                         <label for="title" class="form-label">title address</label>
                         <input name="title" type="text" class="form-control" id="title"
-                            placeholder="Post title">
-                        <?php if (isset($errors['title'])): ?>
+                            placeholder="Post title" value="<?= old("title") ?>">
+                        <?php if (isset($errors['title'])) : ?>
                             <div class="invalid-feedback d-block">
-                                <?php $errors['title']; ?>
+                                <?= $errors['title']; ?>
                             </div>
                         <?php endif; ?>
                     </div>
@@ -23,10 +23,10 @@
                     <div class="mb-3">
                         <label for="excerpt" class="form-label">excerpt</label>
                         <textarea name="excerpt" class="form-control" id="excerpt" rows="2"
-                            placeholder="Excerpt place"></textarea>
-                        <?php if (isset($errors['title'])): ?>
+                            placeholder="Excerpt place"><?= old("excerpt") ?></textarea>
+                        <?php if (isset($errors['excerpt'])) : ?>
                             <div class="invalid-feedback d-block">
-                                <?php $errors['excerpt']; ?>
+                                <?= $errors['excerpt']; ?>
                             </div>
                         <?php endif; ?>
                     </div>
@@ -34,10 +34,10 @@
                     <div class="mb-3">
                         <label for="content" class="form-label">Content</label>
                         <textarea name="content" class="form-control" id="content" rows="5"
-                            placeholder="Content place"></textarea>
-                        <?php if (isset($errors['title'])): ?>
+                            placeholder="Content place"><?= old('content') ?></textarea>
+                        <?php if (isset($errors['content'])) : ?>
                             <div class="invalid-feedback d-block">
-                                <?php $errors['content']; ?>
+                                <?= $errors['content']; ?>
                             </div>
                         <?php endif; ?>
                     </div>
