@@ -1,6 +1,7 @@
 <?php
 
 namespace myfrm;
+
 use PDO;
 use PDOException;
 use PDOStatement;
@@ -61,5 +62,9 @@ class Db
             abort();
         }
         return $res;
+    }
+    public function rowCount()
+    {
+        return $this->stmt->rowCount();
     }
 }
