@@ -7,7 +7,8 @@ function dump($data)
     var_dump($data);
     echo "</pre>";
 }
-function print_arr($data){
+function print_arr($data)
+{
     echo "<pre>";
     print_r($data);
     echo "</pre>";
@@ -55,4 +56,17 @@ function redirect($url = '')
     }
     header("Location: {$redirect}");
     die();
+}
+
+
+function get_allert()
+{
+    if (!empty($_SESSION['success'])) {
+        require_once VIEWS . '/incs/alert_success.php';
+        unset($_SESSION['success']);
+    }
+    if (!empty($_SESSION['error'])) {
+        require_once VIEWS . '/incs/alert_error.php';
+        unset($_SESSION['error']);
+    }
 }
