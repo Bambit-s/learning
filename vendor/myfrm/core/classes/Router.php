@@ -16,12 +16,15 @@ class Router
 
     public function match()
     {
+
         $matches = false;
+
         foreach ($this->routes as $route) {
-            if (($route['uri'] === $this->uri) && ($route['method'] === strtoupper($this->method))) {
-                if ($route['middleware']){
+            
+            if (($route['uri'] === $this->uri) && (in_array($this->method, $route['method']))) {
+                if ($route['middleware']) {
                     $midlleware = MIDDLEWARE[$route['middleware']] ?? false;
-                    if (!$midlleware){
+                    if (!$midlleware) {
                         throw new \Exception("Incorrect middleware {$route['middleware']}");
                     }
                     (new $midlleware)->handle();
@@ -38,16 +41,17 @@ class Router
 
     public function only($midlleware)
     {
-        // dump($this->routes);
-        // dump($midlleware);
-        // dump(count($this->routes)-1);
-        // dump(array_key_last($this->routes));
         $this->routes[array_key_last($this->routes)]['middleware'] = $midlleware;
         return $this;
     }
 
     public function add($uri, $controller, $method)
     {
+        if (is_array($method)) {
+            $method = array_map('strtoupper', $method);
+        } else {
+            $method = [$method];
+        }
         $this->routes[] =
             [
                 'uri' => $uri,

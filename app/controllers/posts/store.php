@@ -2,17 +2,10 @@
 
 use myfrm\Validator;
 
-$db= \myfrm\App::get(\myfrm\Db::class);
+$db = \myfrm\App::get(\myfrm\Db::class);
 $fillable = ['title', 'content', 'excerpt'];
 $data = load($fillable);
-// [
-//         'title' => 'Explicabo Enim corp',
-//         'excerpt' => 'Expl',
-//         'content' => 'Explicabo Enim corp',
-//         'email' => 'mail@mail.com',
-//         'password' => '12345678',
-//         'repassword' => '12345678',
-//     ]
+
 //validation
 $validator = new Validator();
 $validation = $validator->validate($data, [

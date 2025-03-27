@@ -24,7 +24,7 @@ class Db
 
     public function getConncection(array $db_config)
     {
-        if ($this->connection instanceof PDO){
+        if ($this->connection instanceof PDO) {
             return $this;
         }
         $dsn = "mysql:host={$db_config['host']};dbname={$db_config['dbname']}";
@@ -32,7 +32,7 @@ class Db
             $this->connection = new PDO($dsn, $db_config['username'], $db_config['password']);
             return $this;
         } catch (PDOException $e) {
-            // echo "DB Error: {$e->getMessage()}";
+
             require VIEWS . "/errors/500.tpl.php";
             abort(500);
         }
@@ -43,7 +43,8 @@ class Db
         try {
             $this->stmt = $this->connection->prepare($query);
             $this->stmt->execute($params);
-        } catch (PDOException) {
+        } catch (PDOException $e) {
+            error_log("[" . date('Y-m-d H:i:s') . "] DB Error: {$e->getMessage()}" . PHP_EOL, 3, ERRORS_LOG_FILE);
             return false;
         }
         return $this;
@@ -69,5 +70,10 @@ class Db
     public function rowCount()
     {
         return $this->stmt->rowCount();
+    }
+
+    public function getColumn()
+    {
+        return $this->stmt->fetchColumn();
     }
 }
