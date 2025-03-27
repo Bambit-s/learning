@@ -2,11 +2,7 @@
 
 use myfrm\Validator;
 
-global $db;
-/**
- * @var \myfrm\Db $db
- */
-
+$db= \myfrm\App::get(\myfrm\Db::class);
 $fillable = ['title', 'content', 'excerpt'];
 $data = load($fillable);
 // [

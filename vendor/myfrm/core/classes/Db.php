@@ -24,6 +24,9 @@ class Db
 
     public function getConncection(array $db_config)
     {
+        if ($this->connection instanceof PDO){
+            return $this;
+        }
         $dsn = "mysql:host={$db_config['host']};dbname={$db_config['dbname']}";
         try {
             $this->connection = new PDO($dsn, $db_config['username'], $db_config['password']);
