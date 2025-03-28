@@ -18,9 +18,7 @@ class Router
     {
 
         $matches = false;
-
         foreach ($this->routes as $route) {
-            
             if (($route['uri'] === $this->uri) && (in_array($this->method, $route['method']))) {
                 if ($route['middleware']) {
                     $midlleware = MIDDLEWARE[$route['middleware']] ?? false;

@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         foreach ($user as $key => $value) {
             if ($key != 'password') {
-                $_SESSION['user']['key'] = $value;
+                $_SESSION['user'][$key] = $value;
             }
         }
 

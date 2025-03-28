@@ -7,13 +7,16 @@
 const MIDDLEWARE = [
     'auth' => \myfrm\middleware\Auth::class,
     'guest' => \myfrm\middleware\Guest::class,
+    'admin' => \myfrm\middleware\Admin::class,
 ];
+
 //Posts
 $router->get('', 'posts/index.php');
 $router->get('posts', 'posts/show.php');
 $router->get('posts/create', 'posts/create.php')->only('auth');
 $router->post('posts', 'posts/store.php');
-$router->delete('posts', 'posts/destroy.php');
+$router->delete('post', 'posts/destroy.php')->only('auth');
+
 //Pages
 $router->get('about', 'about.php');
 $router->get('contact', 'contact.php');
