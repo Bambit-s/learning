@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $_SESSION['error'] = "Not okay";
         }
 
-        redirect('/');
+        redirect(PATH);
     }
 }
 require_once VIEWS . '/users/register.tpl.php';
