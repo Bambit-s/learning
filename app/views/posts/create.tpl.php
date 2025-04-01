@@ -34,9 +34,11 @@ require VIEWS . '/incs/header.php'
                             placeholder="Content place"><?= old('content') ?></textarea>
                         <?= isset($validation) ? $validation->listErrors('content') : '' ?>
                     </div>
+
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary">Create</button>
                     </div>
+
                 </form>
             </div>
         </div>

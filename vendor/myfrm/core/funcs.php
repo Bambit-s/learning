@@ -19,14 +19,14 @@ function dd($data)
     die;
 }
 
-function abort($code = 404, $title = "404 - not found")
+function abort($code = 404, $title = "404 - not found") // Вывод ошибки.
 {
     http_response_code($code);
     require VIEWS . '/errors/404.tpl.php';
     die;
 }
 
-function load($fillable = [])
+function load($fillable = [])   //Функция добавления в массивы POST.
 {
     $data = [];
     foreach ($_POST as $k => $v) {
@@ -37,7 +37,7 @@ function load($fillable = [])
     return $data;
 }
 
-function old($fieldname)    // Сохрание введеных данных
+function old($fieldname)    // Сохрание введеных данных.
 {
     return isset($_POST[$fieldname]) ? h($_POST[$fieldname]) : '';
 }

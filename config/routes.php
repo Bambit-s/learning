@@ -15,11 +15,14 @@ $router->get('', 'posts/index.php');
 $router->get('posts', 'posts/show.php');
 $router->get('posts/create', 'posts/create.php')->only('auth');
 $router->post('posts', 'posts/store.php');
+
 $router->delete('post', 'posts/destroy.php')->only('auth');
 
 //Pages
 $router->get('about', 'about.php');
-$router->get('contact', 'contact.php');
+$router->get('users/task', 'users/gettask.php')->only('auth');
+$router->post('users/task', 'users/task.php');
+// $router->get('contact', 'contact.php');
 
 //User
 $router->add('register', 'users/register.php', ['post', 'get'])->only('guest');

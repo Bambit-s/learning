@@ -29,9 +29,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="about">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="posts/create">New Post</a>
-                            </li>
+                            <?php if (check_auth()): ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="posts/create">New Post</a>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (check_auth()): ?>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="users/task">New Task</a>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                     </div>
                     <ul class="d-flex text-white align-items-center list-unstyled m-0 gap-3">

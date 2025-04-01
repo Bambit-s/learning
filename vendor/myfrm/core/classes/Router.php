@@ -16,7 +16,8 @@ class Router
 
     public function match()
     {
-
+        dump($this->uri);
+        dump($this->method);
         $matches = false;
         foreach ($this->routes as $route) {
             if (($route['uri'] === $this->uri) && (in_array($this->method, $route['method']))) {

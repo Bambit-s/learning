@@ -11,7 +11,9 @@
                 <form action="post" method="post">
                     <input type="hidden" name="_method" value="DELETE">
                     <input type="hidden" name="id" value="<?= $post['id']; ?>">
-                    <button type="submit" class="btn btn-link">Delete</button>
+                    <?php if (check_auth()): ?>
+                        <button type="submit" class="btn btn-link">Delete</button>
+                    <?php endif; ?>
                 </form>
             </div>
         </div>
