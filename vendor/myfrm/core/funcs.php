@@ -58,7 +58,6 @@ function redirect($url = '')
     die();
 }
 
-
 function get_allert()
 {
     if (!empty($_SESSION['success'])) {

@@ -207,3 +207,102 @@
 [2025-04-01 23:44:14] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
 [2025-04-01 23:45:22] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
 [2025-04-01 23:48:38] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2025-04-03 16:18:29] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:18:59] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:20:55] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:22:14] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:22:31] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:22:40] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:23:29] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:24:40] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:25:02] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:25:59] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 16:26:27] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:07:54] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:08:12] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:11:16] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:12:33] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:13:05] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:14:05] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:15:27] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:16:03] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:16:58] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:17:07] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:17:15] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:22:14] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:26:41] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:27:10] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:27:20] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:28:21] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:28:28] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:29:20] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:29:28] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:29:53] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:30:37] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:32:13] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:33:10] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:33:14] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:34:27] DB Error: SQLSTATE[HY000]: General error: 1364 Field 'create_date' doesn't have a default value
+[2025-04-03 17:34:34] DB Error: SQLSTATE[HY000]: General error: 1364 Field 'create_date' doesn't have a default value
+[2025-04-03 17:34:51] DB Error: SQLSTATE[HY000]: General error: 1364 Field 'create_date' doesn't have a default value
+[2025-04-03 17:35:36] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:35:55] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:36:07] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:36:52] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:36:58] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:38:42] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:39:40] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:39:46] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:40:50] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:41:09] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:41:28] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:42:45] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:44:58] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:45:23] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:45:47] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:46:52] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:47:50] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:48:40] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:48:55] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 17:52:17] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-03 20:55:31] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+[2025-04-03 20:55:39] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+[2025-04-03 20:55:53] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+[2025-04-03 20:56:13] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+[2025-04-03 20:56:37] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2025-04-03 20:56:51] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2025-04-03 20:58:09] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asd' in 'where clause'
+[2025-04-03 20:58:21] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asd' in 'where clause'
+[2025-04-03 21:00:38] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%'' at line 1
+[2025-04-03 21:00:41] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%'' at line 1
+[2025-04-03 21:00:44] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%'' at line 1
+[2025-04-03 21:00:51] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%'' at line 1
+[2025-04-03 21:01:44] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%'' at line 1
+[2025-04-03 21:01:52] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%'' at line 1
+[2025-04-03 21:02:38] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%%'' at line 1
+[2025-04-03 21:02:58] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[2025-04-03 21:05:26] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asd' in 'where clause'
+[2025-04-03 21:06:03] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asd' in 'where clause'
+[2025-04-03 21:06:09] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asdads' in 'where clause'
+[2025-04-03 21:06:23] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sadasd' in 'where clause'
+[2025-04-03 21:08:01] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sadasd' in 'where clause'
+[2025-04-03 21:09:06] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asd' in 'where clause'
+[2025-04-03 21:09:18] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asdads' in 'where clause'
+[2025-04-03 21:09:27] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asdad' in 'where clause'
+[2025-04-03 21:09:39] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asdads' in 'where clause'
+[2025-04-03 21:10:03] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sadasd' in 'where clause'
+[2025-04-03 21:10:07] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sadasd' in 'where clause'
+[2025-04-03 21:13:30] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ads' in 'where clause'
+[2025-04-03 21:19:04] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Завтрак' in 'where clause'
+[2025-04-03 21:20:18] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asd' in 'where clause'
+[2025-04-03 21:20:51] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Сад' in 'where clause'
+[2025-04-03 21:25:25] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Сад' in 'where clause'
+[2025-04-03 21:31:14] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Сад' in 'where clause'
+[2025-04-03 21:33:24] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'сАД' in 'where clause'
+[2025-04-03 21:33:28] DB Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Сад' in 'where clause'
+[2025-04-03 21:39:36] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist
+[2025-04-03 21:39:41] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist
+[2025-04-03 21:42:21] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist
+[2025-04-03 21:43:07] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist
+[2025-04-03 21:43:21] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist
+[2025-04-03 21:44:28] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist

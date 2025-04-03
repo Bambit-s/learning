@@ -29,6 +29,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="about">About</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tasks">Tasks</a>
+                            </li>
                             <?php if (check_auth()): ?>
                                 <li class="nav-item">
                                     <a class="nav-link" href="posts/create">New Post</a>
@@ -36,7 +39,7 @@
                             <?php endif; ?>
                             <?php if (check_auth()): ?>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="users/task">New Task</a>
+                                    <a class="nav-link" href="tasks/task">New Task</a>
                                 </li>
                             <?php endif; ?>
                         </ul>

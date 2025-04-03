@@ -5,4 +5,4 @@ if (!check_auth()){
 }
 
 $title = "My Blog :: Task";
-require_once VIEWS . '/posts/task.tpl.php';
+require_once VIEWS . '/tasks/task.tpl.php';

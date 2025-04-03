@@ -11,7 +11,7 @@ $db->query("DELETE FROM posts WHERE id = ?", [$id]);
 if ($db->rowCount()) {
     $res['answer'] = $_SESSION['success'] = "Post deleted";
 } else {
-    $res['answer'] = $_SESSION['error'] = "Deletion errro1r";
+    $res['answer'] = $_SESSION['error'] = "Deletion error";
 }
 
 if ($api_data) {

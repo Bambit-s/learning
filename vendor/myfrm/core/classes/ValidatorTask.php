@@ -17,8 +17,22 @@ class ValidatorTask
 
     public function validate($data = [], $rules = [])
     {
+
         $this->data_items = $data;
         foreach ($data as $fieldname => $value) {
+            if ($fieldname == 'due_date') {
+                $after_key = $fieldname;
+                $index = array_search($after_key, array_keys($this->data_items));
+                $setup = ["create_date" => date("Y-m-d H:i:s")];
+                $setup1 = ["update_date" => Null];
+                $this->data_items = array_slice($this->data_items, 0, $index + 1) + $setup + $setup1 + $this->data_items;
+            }
+            if ($fieldname == 'category') {
+                $after_key = $fieldname;
+                $index = array_search($after_key, array_keys($this->data_items));
+                $setup = ["status" => "Не выполнено"];
+                $this->data_items = array_slice($this->data_items, 0, $index + 1) + $setup + $this->data_items;
+            }
             if (isset($rules[$fieldname])) {
                 $this->check([
                     'fieldname' => $fieldname,
@@ -47,6 +61,13 @@ class ValidatorTask
             }
         }
     }
+
+
+    public function addDataStatus()
+    {
+        return ($this->data_items);
+    }
+
 
     protected function addError($fieldname, $error)
     {
@@ -90,5 +111,4 @@ class ValidatorTask
     {
         return $value === $this->data_items[$rule_value];
     }
-
 }

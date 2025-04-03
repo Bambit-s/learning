@@ -2,6 +2,8 @@
 $title = "My Blog :: Task";
 /** @var \myfrm\Db */
 $db = \myfrm\App::get(\myfrm\Db::class);  // для работы с бд
+
+
 $fillable = ['title', 'description', 'due_date', 'priority', 'category'];
 $data = load($fillable);
 
@@ -13,14 +15,14 @@ $validation = $validator->validate($data, [
     'priority' => ['required' => true],
     'category' => ['required' => true],
 ]);
+
 if (!$validation->hasErrors()) {
-    if ($db->query("INSERT INTO tasks (`title`, `description`, `due_date`,`priority`,`category`) VALUES (:title, :description, :due_date, :priority, :category)", $data)) {
-        
+    if (($db->query("INSERT INTO tasks (`title`, `description`, `due_date`, `create_date`, `update_date`, `priority`, `category`, `status`) VALUES (:title, :description, :due_date, :create_date, :update_date, :priority, :category, :status)", $validator->addDataStatus()))) {
         $_SESSION['success'] = "Send well!";
     } else {
         $_SESSION['error'] = "Not okay";
     }
-    redirect('/');
+    redirect('/tasks');
 } else {
-    require VIEWS . "/posts/task.tpl.php";
+    require VIEWS . "/tasks/task.tpl.php";
 }
