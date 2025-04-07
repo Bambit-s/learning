@@ -8,32 +8,32 @@ require VIEWS . '/incs/header.php'
 <main class="main py-3">
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="d-flex justify-content-left">
+            <div class="col-md-4">
                 <h1>New task</h1>
 
                 <form action="" method="post">
                     <div class="mb-3">
                         <label>Название</label>
-                        <input id="title" name="title" value="<?= old("title") ?>">
+                        <input class="form-control" id="title" name="title" value="<?= old("title") ?>">
                         <?= isset($validation) ? $validation->listErrors('title') : '' ?>
                     </div>
 
                     <div class="mb-3">
                         <label>Описание</label>
-                        <input id="description" name="description" value="<?= old("description") ?>">
+                        <textarea class="form-control" id="description" name="description" value="<?= old("description") ?>"></textarea>
                         <?= isset($validation) ? $validation->listErrors('description') : '' ?>
                     </div>
 
                     <div class="mb-3">
                         <label for="">Срок выполнения</label>
-                        <input id="due_date" name="due_date" type="datetime-local" value="<?= old("due_date") ?>">
+                        <input class="form-control" id="due_date" name="due_date" type="datetime-local" value="<?= old("due_date") ?>">
                         <?= isset($validation) ? $validation->listErrors('due_date') : '' ?>
                     </div>
 
                     <div class="mb-3">
                         <label>Приоритет</label>
-                        <select name="priority" id="priority-selected">
+                        <select class="form-control" name="priority" id="priority-selected">
                             <option value="">--Выберите приоритет--</option>
                             <option value="Высокий" <?= old('priority') === 'Высокий' ? 'selected' : '' ?>>Высокий</option>
                             <option value="Средний" <?= old('priority') === 'Средний' ? 'selected' : '' ?>>Средний</option>
@@ -44,7 +44,7 @@ require VIEWS . '/incs/header.php'
 
                     <div class="mb-3">
                         <label>Категория</label>
-                        <select name="category" id="category-selected">
+                        <select class="form-control" name="category" id="category-selected">
                             <option value="">--Выберите категорию--</option>
                             <option value="Работа" <?= old('category') === 'Работа' ? 'selected' : '' ?>>Работа</option>
                             <option value="Дом" <?= old('category') === 'Дом' ? 'selected' : '' ?>>Дом</option>

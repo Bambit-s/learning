@@ -6,11 +6,11 @@
         <div class="row">
             <div class="col-md-12">
                 <h3><?= h($post['title']); ?></h3>
-                <?= $post['content']; ?>
-                <?= $post['id']; ?>
+                <?= h($post['content']); ?>
+                <?= h($post['id']); ?>
                 <form action="post" method="post">
-                    <input type="hidden" name="_method" value="DELETE">
-                    <input type="hidden" name="id" value="<?= $post['id']; ?>">
+                    <input type="hidden" name="_method" value="delete">
+                    <input type="hidden" name="id" value="<?= h($post['id']); ?>">
                     <?php if (check_auth()): ?>
                         <button type="submit" class="btn btn-link">Delete</button>
                     <?php endif; ?>

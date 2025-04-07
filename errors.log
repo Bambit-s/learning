@@ -306,3 +306,14 @@
 [2025-04-03 21:43:07] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist
 [2025-04-03 21:43:21] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist
 [2025-04-03 21:44:28] DB Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'demo.datatable' doesn't exist
+[2025-04-03 23:18:04] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+[2025-04-03 23:18:21] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+[2025-04-03 23:19:03] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Gifts' OR 1=1--' AND released = 1%'' at line 1
+[2025-04-03 23:19:18] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+[2025-04-03 23:21:06] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1
+[2025-04-04 00:04:24] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-04 16:33:09] DB Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[2025-04-04 16:40:22] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'title'); </script>%'' at line 1
+[2025-04-04 16:40:28] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'title'); </script>%'' at line 1
+[2025-04-04 16:42:48] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'title'); </script>%'' at line 1
+[2025-04-04 16:44:23] DB Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'title'); </script>%'' at line 1

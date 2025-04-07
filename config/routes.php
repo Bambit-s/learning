@@ -11,26 +11,26 @@ const MIDDLEWARE = [
 ];
 
 //Posts
-$router->get('', 'posts/index.php');
-$router->get('posts', 'posts/show.php');
+$router->add('', 'posts/index.php',['GET']);
+$router->add('posts', 'posts/show.php',['GET']);
 
-$router->get('posts/create', 'posts/create.php')->only('auth');
-$router->post('posts', 'posts/store.php');
-$router->delete('post', 'posts/destroy.php')->only('auth');
+$router->add('posts/create', 'posts/create.php',['GET'])->only('auth');
+$router->add('posts', 'posts/store.php',['POST']);
+$router->add('post', 'posts/destroy.php',['DELETE'])->only('auth');
 
 //Pages
-$router->get('about', 'about.php');
+$router->add('about', 'about.php', ['GET']);
 
 //Tasks
-$router->get('tasks/task', 'tasks/gettask.php')->only('auth'); //create task
-$router->post('tasks/task', 'tasks/task.php'); //send to data base
-$router->get('tasks', 'tasks/tasks.php');   //show all
-$router->post('tasks', 'tasks/tasks.php');   //search task
+$router->add('tasks/task', 'tasks/gettask.php',['GET','POST'])->only('auth'); //create task
+$router->add('tasks', 'tasks/tasks.php',['GET','POST','DELETE']);   //show all tasks and search tasks by name and id
 
 //User
-$router->add('register', 'users/register.php', ['post', 'get'])->only('guest');
+$router->add('register', 'users/register.php', ['GET','POST'])->only('guest');
+
 // $router->post('register', 'users/store.php')->only('guest');
-$router->add('login', 'users/login.php', ['post', 'get'])->only('guest');
-$router->get('logout', 'users/logout.php')->only('auth');
+$router->add('login', 'users/login.php', ['POST', 'GET'])->only('guest');
+
+$router->add('logout', 'users/logout.php',['GET'])->only('auth');
 
 // dump($router->routes);

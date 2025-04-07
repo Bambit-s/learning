@@ -11,16 +11,14 @@ class Router
     public function __construct()
     {
         $this->uri = (trim(parse_url($_SERVER['REQUEST_URI'])['path'], '/'));
-        $this->method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD']; // отлавливает delete и другие
+        $this->method = ($_POST['_method'] ?? $_SERVER['REQUEST_METHOD']); // отлавливает delete и другие
     }
 
     public function match()
     {
-        // dump($this->uri);
-        // dump($this->method);
         $matches = false;
         foreach ($this->routes as $route) {
-            if (($route['uri'] === $this->uri) && (in_array($this->method, $route['method']))) {
+            if (($route['uri'] === $this->uri) && in_array(($this->method), $route['method'])) {
                 if ($route['middleware']) {
                     $midlleware = MIDDLEWARE[$route['middleware']] ?? false;
                     if (!$midlleware) {
@@ -46,11 +44,6 @@ class Router
 
     public function add($uri, $controller, $method)
     {
-        if (is_array($method)) {
-            $method = array_map('strtoupper', $method);
-        } else {
-            $method = [$method];
-        }
         $this->routes[] =
             [
                 'uri' => $uri,
@@ -74,5 +67,9 @@ class Router
     public function delete($uri, $controller)
     {
         return $this->add($uri, $controller, 'DELETE');
+    }
+    public function put($uri, $controller)
+    {
+        return $this->add($uri, $controller, 'PUT');
     }
 }

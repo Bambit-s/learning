@@ -17,6 +17,14 @@ main.main {
     flex: 1 1 auto;
 }
 
-.container{
-    
+.label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.tasks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
