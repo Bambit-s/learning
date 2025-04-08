@@ -3,7 +3,6 @@ $title = "My Blog :: Task";
 /** @var \myfrm\Db */
 $db = \myfrm\App::get(\myfrm\Db::class);  // для работы с бд
 
-
 $fillable = ['title', 'description', 'due_date', 'priority', 'category'];
 $data = load($fillable);
 

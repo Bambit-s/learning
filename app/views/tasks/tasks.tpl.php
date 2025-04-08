@@ -9,6 +9,7 @@
                 <div class="mb-3">
                     <h3>Поиск</h3>
                     <form action="" method="post" class="nd-3">
+                        <input type="hidden" name="_method" value="post">
                         <input name="search" class="form-control">
                     </form>
                 </div>
@@ -39,11 +40,18 @@
                                     <p class="card-text"><?= h($post['status']) ?></p>
                                 </div>
                             </div>
-                            <form action="post" method="post">
-                                <input type="hidden" name="_method" value="delete">
-                                <input type="hidden" value="<?= h($post['id']); ?>">
-                                <button type="submit" class="btn btn-link">Delete</button>
-                            </form>
+                            <div class="tasks">
+                                <form action="" method="post">
+                                    <input type="hidden" name="_method" value="delete">
+                                    <input type="hidden" name="id" value="<?= h($post['id']); ?>">
+                                    <button type="submit" class="btn btn-link">Delete</button>
+                                </form>
+                                <form action="" method="post">
+                                    <input type="hidden" name="_method" value="put">
+                                    <input type="hidden" name="id" value="<?= h($post['id']); ?>">
+                                    <button type="submit" class="btn btn-link">Update</button>
+                                </form>
+                            </div>
                         </div>
                     <?php endforeach; ?>
                 </div>
